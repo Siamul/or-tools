@@ -57,7 +57,7 @@ endif()
 # Layout build dir like install dir
 include(GNUInstallDirs)
 if(UNIX)
-  option(BUILD_SHARED_LIBS "Build shared libraries (.so or .dyld)." ON)
+  option(BUILD_SHARED_LIBS "Build shared libraries (.so or .dyld)." OFF)
   set(CMAKE_BUILD_WITH_INSTALL_RPATH TRUE)
   set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_LIBDIR})
   set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_LIBDIR})
